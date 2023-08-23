@@ -30,6 +30,17 @@ class _MainFoodPageState extends State<MainFoodPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+                  Center(
+                    child: Container(
+                      width: Dimensions.height45,
+                      height: Dimensions.height45,
+                      child: Icon(Icons.search,color: Colors.white, size: Dimensions.iconSize24),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(Dimensions.radius15),
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
                   Column(
                     children: [
                       BigText(text: "Srbija", color: Colors.blue,),
@@ -41,17 +52,6 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       )
 
                     ],
-                  ),
-                  Center(
-                    child: Container(
-                      width: Dimensions.height45,
-                      height: Dimensions.height45,
-                      child: Icon(Icons.search,color: Colors.white, size: Dimensions.iconSize24),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(Dimensions.radius15),
-                        color: Colors.blue,
-                      ),
-                    ),
                   )
                 ],
               ),
