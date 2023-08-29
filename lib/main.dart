@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:poslasticarnica/pages/food/popular_food_detail.dart';
-import 'package:poslasticarnica/pages/food/recommended_food_detail.dart';
 import 'package:poslasticarnica/pages/home/main_food_page.dart';
 import 'package:get/get.dart';
-void main() {
+import 'helper/dependeces.dart' as dep;
+
+ Future<void> main() async{
+   WidgetsFlutterBinding.ensureInitialized();
+   await dep.init();
   runApp(const MyApp());
 }
 
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: RecommendedFooddetail(),
+      home: MainFoodPage(),
     );
   }
 }

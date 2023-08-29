@@ -25,11 +25,30 @@ class _MainFoodPageState extends State<MainFoodPage> {
           Container(
             child: Container(
               margin: EdgeInsets.only(top:Dimensions.height45, bottom: Dimensions.height15),
-              padding: EdgeInsets.only(left: Dimensions.width20, right: Dimensions.width20),
+              padding: EdgeInsets.only(left:Dimensions.width30, right: Dimensions.width20),
 
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
+
+                  Column(
+
+                  children: [ Container(
+                    child: Container(
+                        padding: EdgeInsets.only(left:1, right: Dimensions.width20),
+
+                    child: BigText(text: "Srbija", color: Colors.blue))),
+
+                    Row(
+                      children: [
+                        SmallText(text: "Beograd"),
+                        Icon(Icons.arrow_drop_down_rounded)
+                      ],
+                    )
+
+                  ],
+                ),
+
                   Center(
                     child: Container(
                       width: Dimensions.height45,
@@ -41,18 +60,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                       ),
                     ),
                   ),
-                  Column(
-                    children: [
-                      BigText(text: "Srbija", color: Colors.blue,),
-                      Row(
-                        children: [
-                          SmallText(text: "Beograd"),
-                          Icon(Icons.arrow_drop_down_rounded)
-                        ],
-                      )
 
-                    ],
-                  )
                 ],
               ),
             ),
